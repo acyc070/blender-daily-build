@@ -22,7 +22,7 @@ jobs:
           path: blender-build/blender
       - name: Install dependencies
         run: |
-          ./blender-build/blender/build_files/build_environment/windows/buildall.cmd
+          ./blender-build/blender/build_files/build_environment/windows/build_deps.cmd
           sudo apt install -y libglfw3 libgles2-mesa-dev
       - name: Checkout Blender libraries
         run: |
